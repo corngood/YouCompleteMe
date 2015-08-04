@@ -21,7 +21,7 @@ from ycmd.utils import ToUtf8IfNeeded
 from ycm.client.base_request import ( BaseRequest, JsonFromFuture,
                                       HandleServerException )
 
-TIMEOUT_SECONDS = 0.5
+TIMEOUT_SECONDS = 10
 
 class CompletionRequest( BaseRequest ):
   def __init__( self, request_data ):
